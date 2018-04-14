@@ -13,9 +13,9 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-root_domain: https://lusaxweb.github.io/vuenut.org/docs/
-url: https://lusaxweb.github.io/vuenut.org
-root: /docs/
+root_domain: https://lusaxweb.github.io/vuenut.org/docs
+url: https://lusaxweb.github.io/vuenut.org/docs
+root: /
 permalink: /:title/
 archive_dir: archives
 category_dir: categories
