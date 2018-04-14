@@ -22,7 +22,7 @@ code_dir: downloads/code
 
 # Directory
 source_dir: src
-public_dir: public
+public_dir: docs
 
 # Directory
 i18n_dir: :lang
