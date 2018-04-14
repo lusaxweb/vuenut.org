@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-root_domain: https://lusaxweb.github.io/vuenut.org/docs
-url: https://lusaxweb.github.io/vuenut.org/docs
+root_domain: https://lusaxweb.github.io/vuenut.org
+url: https://lusaxweb.github.io/vuenut.org
 root: /
 permalink: /:title/
 archive_dir: archives
@@ -80,4 +80,4 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:lusaxweb/vuenut.org.git
+  repo: https://github.com/lusaxweb/vuenut.org.git
