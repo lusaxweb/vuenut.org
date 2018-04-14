@@ -1,8 +1,9 @@
 # Header
 
-menu:
-  Home: /
-  docs: /archives
+# menu:
+#   Home: /
+#   docs: /archives
+root_domain: vuejs.org
 
 # Content
 excerpt_link: Read More
