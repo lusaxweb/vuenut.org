@@ -1,7 +1,8 @@
 <%- partial('_partial/head') %>
 <body>
   <div id="container">
-    <div id="wrap" class="<%- is_home() ? ' docs100' : '' %>">
+    <div id="wrap" >
+      <!-- class="<%- is_home() ? ' docs100' : '' %>" -->
       <%- partial('_partial/menu2', null, {cache: !config.relative_link}) %>
       <div class="outer ">
 

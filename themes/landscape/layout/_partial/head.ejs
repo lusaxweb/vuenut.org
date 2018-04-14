@@ -27,7 +27,8 @@
     <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <!-- <link rel="icon" href="<%- theme.favicon %>"> -->
+    <link rel="icon" src="<%- url_for("/css/images/vuenut-favicon.png") %>" type="image/png">
   <% } %>
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
