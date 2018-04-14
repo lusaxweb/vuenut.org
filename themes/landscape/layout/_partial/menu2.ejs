@@ -1,0 +1,17 @@
+<header class="con-menu">
+  <div class="con-img-menu">
+    <a href="<%- url_for("/") %>">
+      <img class="vuenut-logo-menu" src="<%- url_for("/css/images/vuenut_opt.png") %>">
+    </a>
+
+  </div>
+    <ul>
+      <li>
+        <a href="<%- url_for("/") %>" class="nav-link Home<%- is_home() ? ' current' : '' %>">Home</a>
+      </li>
+      <li>
+        <a href="<%- url_for("/docs/introduction.html") %>" class="nav-link docs<%- page.path.match(/docs/) ? ' current' : '' %>">Docs</a>
+
+      </li>
+    </ul>
+</header>

@@ -1,0 +1,26 @@
+<div class="vuenut-home">
+  <section id="inicio" class="inicio">
+    <div class="con-centro">
+      <img class="vuenut-logo" src="<%- url_for("/css/images/vuenut01.png") %>">
+      <h1><b>Vuenut</b> is a component to develop faster and more fluently.</h1>
+      <ul class="ulx">
+        <!-- <li class="induction">
+          <a href="<%- url_for("/docs/introduction.html") %>">
+            <i class="material-icons">play_arrow</i> Induction
+          </a>
+        </li> -->
+        <li>
+          <a href="<%- url_for("/docs/introduction.html") %>">
+            <i class="material-icons">book</i> Documentation
+          </a>
+        </li>
+        <li class="gitbtn">
+          <a href="https://github.com/lusaxweb/vuenut">
+            <i class="flaticon-github-logo"></i> Github
+          </a>
+        </li>
+      </ul>
+    </div>
+    <vuenut :store="store"/>
+  </section>
+</div>

@@ -1,0 +1,19 @@
+<div class="con-menu-docs Home<%- is_home() ? ' menu-oculto' : '' %>">
+  <ul>
+    <li class="nav-link docs<%- page.path.match(/introduction\.html/) ? ' current' : '' %>">
+      <a href="<%- url_for("/docs/introduction.html") %>" >What is Vuenut.js?</a>
+    </li>
+    <li class="nav-link docs<%- page.path.match(/gettingStarted\.html/) ? ' current' : '' %>">
+      <a href="<%- url_for("/docs/gettingStarted.html") %>">Getting Started</a>
+    </li>
+    <li class="nav-link docs<%- page.path.match(/cdn\.html/) ? ' current' : '' %>">
+      <a href="<%- url_for("/docs/cdn.html") %>">Quick-start CDN</a>
+    </li>
+    <li class="nav-link docs<%- page.path.match(/becomePatron\.html/) ? ' current' : '' %>">
+      <a href="<%- url_for("/docs/becomePatron.html") %>">Become a Patron</a>
+    </li>
+    <li class="nav-link docs<%- page.path.match(/SpecialFeatures\.html/) ? ' current' : '' %>">
+      <a href="<%- url_for("/docs/SpecialFeatures.html") %>">Special features</a>
+    </li>
+  </ul>
+</div>
