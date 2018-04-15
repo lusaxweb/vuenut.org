@@ -23,6 +23,9 @@ if(document.querySelector('#inicio')){
   new Vue({
    store,
    methods:{
+     clickmenu(){
+       console.log("click menu");
+     },
      scrollInduction(){
        this.irSection('con-induccion')
      },
@@ -63,6 +66,20 @@ if(document.querySelector('#inicio')){
      }
    }
   }).$mount('#inicio')
+}
+
+function clickmenu(){
+  var menu = document.querySelector('.con-menu-docs')
+  var icon = document.querySelector('.icon-res')
+  console.dir(menu);
+  if(menu.style.transform == "translate(0px)"){
+    menu.style.transform = "translate(-100%)"
+    icon.innerHTML = "<i class='material-icons'>menu</i>"
+  } else {
+    icon.innerHTML = "<i class='material-icons'>close</i>"
+
+    menu.style.transform = "translate(0px)"
+  }
 }
 
 (function($){
