@@ -1,13 +1,86 @@
+if(document.querySelector('#inicio')){
 
-// new Vue({
-//   data(){
-//     return {
-//       store:{
-//         vuenut:'hello world'
-//       }
-//     }
-//   }
-// }).$mount('#inicio')
+  const store = new Vuex.Store({
+  state: {
+    vuenut:'Hello World',
+    nodo:{
+      child:"I am a son",
+      array:[
+        "1",
+        "2",
+        {childArray:"I am a child of an array"}
+      ]
+    },
+    sibling:{
+      name:"Brother",
+    },
+    boolean:true,
+    clickOnMyValue:"Edit me",
+    clickOnMyValueBoolean:true
+  },
+})
+
+  new Vue({
+   store,
+   methods:{
+     clickmenu(){
+       console.log("click menu");
+     },
+     scrollInduction(){
+       this.irSection('con-induccion')
+     },
+     irSection(idx){
+
+       let conx = document.getElementById(idx.replace('#',''));
+
+       scrollTo(document.querySelector('#container'), conx.offsetTop - 100, 300);
+
+       function easeInOutCirc(t, b, c, d) {
+           t /= d/2;
+           if (t < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+           t -= 2;
+           return c/2 * (Math.sqrt(1 - t*t) + 1) + b;
+         }
+
+       function scrollTo(element, to, duration) {
+         var start = element.scrollTop,
+         change = to - start,
+         currentTime = 0,
+         increment = 20;
+
+         var animateScroll = function(){
+           currentTime += increment;
+           var val = easeInOutCirc(currentTime, start, change, duration);
+           // console.log(val);
+           element.scrollTop = val;
+           if(currentTime < duration) {
+             setTimeout(animateScroll, increment);
+           }
+         };
+         animateScroll();
+
+
+       }
+
+
+     }
+   }
+  }).$mount('#inicio')
+}
+
+function clickmenu(){
+  var menu = document.querySelector('.con-menu-docs')
+  var icon = document.querySelector('.icon-res')
+  console.dir(menu);
+  if(menu.style.transform == "translate(0px)"){
+    menu.style.transform = "translate(-100%)"
+    icon.innerHTML = "<i class='material-icons'>menu</i>"
+  } else {
+    icon.innerHTML = "<i class='material-icons'>close</i>"
+
+    menu.style.transform = "translate(0px)"
+  }
+}
 
 (function($){
 

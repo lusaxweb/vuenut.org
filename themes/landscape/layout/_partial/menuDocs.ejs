@@ -1,5 +1,8 @@
 <div class="con-menu-docs <%- is_home() ? ' menu-oculto' : '' %>">
   <!-- Home<%- is_home() ? ' menu-oculto' : '' %> -->
+  <div onclick="clickmenu()" class="icon-res">
+    <i class="material-icons">menu</i>
+  </div>
   <ul>
     <li class="nav-link docs<%- page.path.match(/introduction/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/introduction.html") %>" >What is Vuenut.js?</a>

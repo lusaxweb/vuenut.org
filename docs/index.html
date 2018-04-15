@@ -24,6 +24,7 @@
   
   <link rel="stylesheet" href="/vuenut.org/css/style.css">
   <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
   <script src="https://unpkg.com/vuenut/dist/vuenut.umd.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/vuenut/dist/vuenut.css">
 </head>
@@ -33,6 +34,7 @@
     <div id="wrap" class=" docs100">
       <!--  -->
       <header class="con-menu">
+
   <div class="con-img-menu">
     <a href="/vuenut.org/">
       <img class="vuenut-logo-menu" src="/vuenut.org/css/images/vuenut_opt.png">
@@ -51,6 +53,9 @@
         <a href="/vuenut.org/docs/introduction.html" class="nav-link docs">Docs</a>
 
       </li>
+      <li class="icon-g">
+        <a target="_blank" href="https://github.com/lusaxweb/vuenut" ><i class="flaticon-github-logo"></i></a>
+      </li>
     </ul>
 </header>
 
@@ -58,6 +63,9 @@
 
         <div class="con-menu-docs  menu-oculto">
   <!-- Home menu-oculto -->
+  <div onclick="clickmenu()" class="icon-res">
+    <i class="material-icons">menu</i>
+  </div>
   <ul>
     <li class="nav-link docs">
       <a href="/vuenut.org/docs/introduction.html" >What is Vuenut.js?</a>
@@ -144,30 +152,285 @@
   
 
  -->
-<div class="vuenut-home">
-  <section id="inicio" class="inicio">
+<div id="inicio" class="vuenut-home">
+  <section  class="inicio">
     <div class="con-centro">
       <img class="vuenut-logo" src="/vuenut.org/css/images/vuenut01.png">
       <h1><b>Vuenut</b> is a component to develop faster and more fluently.</h1>
       <ul class="ulx">
-        <!-- <li class="induction">
-          <a href="/vuenut.org/docs/introduction.html">
+        <li @click="scrollInduction" class="induction">
+          <a href.prevent="#">
             <i class="material-icons">play_arrow</i> Induction
           </a>
-        </li> -->
+        </li>
         <li>
           <a href="/vuenut.org/docs/introduction.html">
             <i class="material-icons">book</i> Documentation
           </a>
         </li>
         <li class="gitbtn">
-          <a href="https://github.com/lusaxweb/vuenut">
+          <a target="_blank" href="https://github.com/lusaxweb/vuenut">
             <i class="flaticon-github-logo"></i> Github
           </a>
         </li>
       </ul>
     </div>
-    <!-- <vuenut :store="store"/> -->
+    <vuenut :store="$store.state"/>
+  </section>
+  <section id="con-induccion" class="con-induccion">
+    <div class="one grisx">
+      <div class="textx">
+        <h2><span>1</span>Hello, welcome to<b>Vuenut</b></h2>
+        <p>
+          If you are already here because you love it like we do, this library is created to manipulate and visualize state management pattern in the case of vuejs (<a href="https://vuex.vuejs.org/en/">Vuex</a>) the main idea is to facilitate the development and maintenance of data in an application.
+          <br><br>
+          <b> Vuenut </b> is a library based on <a href="https://vuejs.org/"> vue js </a> to use it we have to have the entire vue ecosystem added to our project e <a href="https://lusaxweb.github.io/vuenut.org/docs/gettingStarted.html"> install the dependency </a> in the case of using <a href="#"> webpack </a> if you do not just have to <a href="https://lusaxweb.github.io/vuenut.org/docs/cdn.html"> compile the cdn </a> like any other library.
+          <br><br>
+          Well already added <b> Vuenut </b> in your great project you will see a circle on the left with an arrow, this circle is a button to open and close vuenut then let's open it.
+        </p>
+      </div>
+    </div>
+
+    <div class="dos">
+      <div class="textx">
+        <h2><span>2</span>Features in <b>Display Store</b></h2>
+        <p>
+          First of all when we create a complex system or application we need a store with a lot of data and a fairly extensive structure with nodes, children, parents, siblings, array, objects and different types of data
+
+          <b>Vuenut</b> found the solution of making a tree of nodes as if we visualized a normal json but with some properties that you will surely love.
+          </p>
+          <div class="con-table">
+          <table>
+
+              <thead>
+                <tr>
+                  <th> Characteristic </th>
+                  <th> Description </th>
+                  <th> Execution </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td> Display Store </td>
+                  <td> view independent nodes open and close them to see the data without losing much </td>
+                  <td> Encuanetra when opening <b> Vuenut </b> with the name of state is the main node </td>
+                </tr>
+                <tr>
+                  <td> Copy node path </td>
+                   <td> Find the exact value route within our beloved store (this is one of the best features) </td>
+                   <td> Inside the node display each one has a <b> Icon </b> <i data-v-239c8373="" class="material-icons"> my_location </i> you just have to click and the route is copied automatically. </td>
+                </tr>
+                <tr>
+                  <td> Copy Store to node </td>
+                  <td> We can copy the entire store within a specific node that would return everything to us in a json string </td>
+                  <td> Inside the node display each one has a <b> Icon </b> <i data-v-239c8373="" class="material-icons"> content_copy </i> you just have to click and the entire store is copied within the. </td>
+                </tr>
+                <tr>
+                  <td> Change format within a node </td>
+                  <td> the display of each node can change from a tree structure to a common json-shaped string </td>
+                  <td> Inside the node display each one has a <b> Icon </b> <i data-v-239c8373="" class="material-icons"> flip </i> you just have to click and the display format of all the child nodes will be changed. </td>
+                </tr>
+                <tr>
+                  <td> Edit the value of a node </td>
+                  <td> To edit the value within a node if you do not have any children and be a valid value </td>
+                  <td> In each child node that does not have other children we can edit its value by clicking on it (if it is a data type (boolean) a checbox appears <i class="material-icons"> check_box </i> <b>: true </b>, <i class="material-icons"> check_box_outline_blank </i> <b>: false </b>, for better handling of the data). </td>
+                </tr>
+              </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tres grisx">
+      <div class="textx">
+        <h2> <span> 3 </span> Features <b> General </b> </h2>
+        <p>
+          <b>Vuenut</b> has some features designed for faster development and production, we love producing and programming.
+        </p>
+        <div class="con-table">
+
+
+        <table>
+
+          <thead>
+            <tr>
+              <th> Characteristic </th>
+              <th> Description </th>
+              <th> Execution </th>
+            </tr>
+          </thead>
+          <div class="">
+
+
+          <tbody>
+            <tr>
+              <td> Edit current store </td>
+              <td> If you need to edit the store live or change its structure, within the edit there are some aggravating features such as obfuscating the store or formatting </td>
+              <td> When you click on the first (1) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" class="material-icons"> create </i> </td>
+            </tr>
+            <tr>
+              <td> Copy Store </td>
+              <td> When you need to copy the entire store </td>
+              <td> By clicking on the second (2) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Copy Store" class="material-icons"> content_copy </i > </td>
+              </tr>
+              <tr>
+                <td> Save Current Store </td>
+                <td> You can save the current store to use it later at any time regardless of whether the page is reloaded or the browser is closed (it is saved in the browser storage) </td>
+                <td> By clicking on the Third (3) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Save Store" class="material-icons"> cloud_upload </i > </td>
+                </tr>
+                <tr>
+                  <td> My saved stores </td>
+                  <td> Where are my stores? Saved stores are stored in the browser storage to reuse them whenever you want, there are features within this option such as <b> export </b>, <b> Place </b> and for last <b> Delete </b> </td>
+                  <td> By clicking on the fourth (4) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="My Store Saved" class="material-icons"> folder </i> </td>
+                </tr>
+                <tr>
+                  <td> Change store format (tree | json string) </td>
+                  <td> We have an option to change the format of how to display the store can be as default (nodes) or change (json string) for a complete structure </td>
+                  <td> By clicking on the fifth (5) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Change format" class="material-icons"> flip </i > </td>
+                  </tr>
+                  <tr>
+                    <td> Change store format (tree | json string) </td>
+                    <td> We have an option to change the format of how to display the store can be as default (nodes) or change (json string) for a complete structure </td>
+                    <td> By clicking on the fifth (5) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Change format" class="material-icons"> flip </i > </td>
+                    </tr>
+                    <tr>
+                      <td> Component Full Screen </td>
+                      <td> Do you need space? you can put the component in full size </td>
+                      <td> By clicking on the Sixth (6) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Change format" class="material-icons"> flip </i > </td>
+                      </tr>
+                      <tr>
+                        <td> Export current store </td>
+                        <td> With this feature you can export all the current store to save it in the PC as a format (.json), this feature is intended to share the current data with another developer or to replicate errors </td>
+                        <td> By clicking on the seventh (7) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Export Store" class="material-icons"> move_to_inbox </i > </td>
+                        </tr>
+                        <tr>
+                          <td> Import current store </td>
+                          <td> After exporting a store or creating it with the extension (.json) you can import it to replace the current one </td>
+                          <td> By clicking on the eighth (8) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" title="Import Store" class="material-icons"> unarchive </i > </td>
+                          </tr>
+                          <tr>
+                            <td> Night mode </td>
+                            <td> We are lovers of programming and we love to develop so at night so vuenut has the night mode so you never stop. </td>
+                            <td> By clicking on the ninth (9) button inside the main menu the referential icon is <i data-v-4f5dc9a7="" class="material-icons"> hdr_strong </i> </td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                      </div>
+      </div>
+    </div>
+
+
+
+    <div class="tres">
+      <div class="textx">
+        <h2> <span> 4 </span> Configurations </h2>
+        <p>
+          <b>Vuenut</b> It has some consas that you can configure and details that make the difference when viewing or developing.
+
+          to enter the settings go to the last button with the referential <b>icon</b> <i data-v-4f5dc9a7="" title="Settings" class="material-icons"> settings </i>
+        </p>
+        <div class="con-table">
+
+
+          <table>
+
+              <thead>
+                <tr>
+                  <th> Characteristic </th>
+                  <th> Description </th>
+                  <th> Execution </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td> Change the primary color </td>
+                  <td> You can change the main color of vuenut, we know that we love to customize everything to our liking, you can easily return to the default color at any time. </td>
+                  <td> In the configurations the first button with the name (color) </td>
+                </tr>
+                <tr>
+                  <td> Arrow sticky </td>
+                  <td> The vuenut open and close button is sticky and if it's annoying for you, you can remove that functionality and leave it static. </td>
+                  <td> In the configurations the second button (2) with the reference (Arrow sticky) </td>
+                </tr>
+                <tr>
+                  <td> Font size </td>
+                  <td> vuenut by default has a font size (16px) that may be small for some so you can increase or decrease the size with a maximum of (24px). </td>
+                  <td> In the configurations the third button (3) with the reference (Font size) </td>
+                </tr>
+                <tr>
+                  <td> Restore </td>
+                  <td> Some vuenut data is saved you can restore the complete component. color, funt-size, stores saved among others. </td>
+                  <td> In the configurations the fourth button (4) with the reference (Restore) </td>
+                </tr>
+              </tbody>
+
+          </table>
+          </div>
+      </div>
+    </div>
+
+    <div class="tres grisx">
+      <div class="textx">
+        <h2><span><i class="material-icons">videogame_asset</i></span> Play Ground </h2>
+        <p>
+          Like any developer we want to play with our new toy so get to work.
+          <br> <br>
+          Let's see how vuenut reflects the data changes in the application and viseversa.
+        </p>
+        <div class="ejemplo">
+          <ul>
+
+            <li>
+              Change the data inside this input and see the node inside vuenut (<b> state> vuenut </b>)
+              <input v-model="$store.state.vuenut" type="text" name="" value="">
+              <br> <br>
+              Now that you have seen the change in <b> vuenut </b>, change the data from the node by clicking on the value and see how the data changes immediately in the input.
+            </li>
+
+
+            <li>
+              In <b> vuenut </b> the data <b> boolean </b> changes them with a checbox for better handling, changes the value of this checbox and displays the data in vuenut (<b> state> boolean </b >) Value: <b> {{this.$store.state.boolean? 'True': 'false'}} </b>
+              <input v-model="$store.state.boolean" type="checkbox" name="" value="">
+              <br>
+            </li>
+
+
+            <li>
+              Now because we do not do something a little more complex to test the power of vuenut.
+              <br>
+              1) First change the value of this input that is reflected in vuenut (<b> state> clickOnMyValue </b>)
+              <input v-model="$store.state.clickOnMyValue" type="text" name="" value="">
+              <br>
+              2) Now that we have changed the data of our store, we will save it to use it later.
+              <br>
+              __ 2.1) go to the save button with the reference icon <i title="Save Store" class="material-icons"> cloud_upload </i>, save the store with the name that more like it
+              <br> <br>
+
+              3) Restart the page or change the input value again.
+              <br> <br>
+              4) After having a different value go to the store saved reference icon <i data-v-4f5dc9a7="" title="My Store Saved" class="material-icons"> folder </i>, you can see there is the store saved with the name before set, click on the put store button with the referential icon <i data-v-4f5dc9a7="" title="Put Store" class="material-icons"> unarchive </i>
+
+              Ready and our store saved this post, check the input with the previous value
+
+              ! Great the saved data are now as before.
+              <br> <br>
+            </li>
+
+            <li>
+              You can continue playing with vuenut as much as you want to try all the functionalities.
+              <br>
+              If you want more freedom you can go to our <a target="_blank" href="https://codepen.io/anon/pen/aYggQp">Codepen</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 

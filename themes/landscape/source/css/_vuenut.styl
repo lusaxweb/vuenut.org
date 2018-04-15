@@ -159,7 +159,7 @@ a {
 //   justify-content: center;
 // }
 
-.outer {
+.outer:not(.docs100) {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -204,7 +204,8 @@ a {
   color: rgba(secondary,.6)
 
 .menu-oculto {
-  transform: translate(-100%);
+  // transform: translate(-100%);
+  display: none;
 }
 
 .docs100 {
@@ -222,4 +223,99 @@ a {
 
 .article-inner a {
   color: rgb(primary) !important
+}
+
+.icon-res {
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background: rgb(secondary);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transform: translate(100%);
+  top: 0px;
+}
+
+// responsive
+@media only screen and (max-width: 800px) {
+  #wrap {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .con-menu-docs {
+    transform: translate(-100%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .con-table {
+    overflow: auto !important;
+    width: 100% !important;
+  }
+  .con-table table {
+    min-width: 800px;
+  }
+  .textx {
+    padding: 20px !important;
+  }
+  .con-centro .vuenut-logo {
+    width: 200px;
+  }
+  .inicio h1 {
+    font-size: 24px;
+  }
+  .ulx {
+    display:block;
+    padding: 10px;
+  }
+  .ulx li{
+    width: calc(100% - 10px)
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .con-menu ul {
+      padding-right: 0px;
+  }
+  .con-menu li {
+    margin: 0px;
+  }
+  .con-menu li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+  }
+  .con-img-menu {
+    padding-left: 10px !important;
+    width: 110px !important;
+  }
+  .icon-g a{
+    padding: 8px !important;
+  }
+  .article-entry {
+    padding: 0px !important;
+  }
+  .outer:not(.docs100) {
+    padding-right: 15px;
+  }
+  .con-menu-docs {
+    top: 42px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .textx h2 {
+    font-size: 18px !important;
+  }
+  .textx p {
+    font-size: 14px !important;
+  }
+
+}
+@media only screen and (max-width: 360px) {
+  .con-menu-docs {
+    width: calc(100% - 50px);
+  }
 }

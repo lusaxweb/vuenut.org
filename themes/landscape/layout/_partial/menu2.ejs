@@ -1,4 +1,5 @@
 <header class="con-menu">
+
   <div class="con-img-menu">
     <a href="<%- url_for("/") %>">
       <img class="vuenut-logo-menu" src="<%- url_for("/css/images/vuenut_opt.png") %>">
@@ -16,6 +17,9 @@
       <li>
         <a href="<%- url_for("/docs/introduction.html") %>" class="nav-link docs<%- page.path.match(/docs/) ? ' current' : '' %>">Docs</a>
 
+      </li>
+      <li class="icon-g">
+        <a target="_blank" href="https://github.com/lusaxweb/vuenut" ><i class="flaticon-github-logo"></i></a>
       </li>
     </ul>
 </header>

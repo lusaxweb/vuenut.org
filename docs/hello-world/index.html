@@ -28,6 +28,7 @@
   
   <link rel="stylesheet" href="/vuenut.org/css/style.css">
   <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
   <script src="https://unpkg.com/vuenut/dist/vuenut.umd.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/vuenut/dist/vuenut.css">
 </head>
@@ -37,6 +38,7 @@
     <div id="wrap" class="">
       <!--  -->
       <header class="con-menu">
+
   <div class="con-img-menu">
     <a href="/vuenut.org/">
       <img class="vuenut-logo-menu" src="/vuenut.org/css/images/vuenut_opt.png">
@@ -55,6 +57,9 @@
         <a href="/vuenut.org/docs/introduction.html" class="nav-link docs">Docs</a>
 
       </li>
+      <li class="icon-g">
+        <a target="_blank" href="https://github.com/lusaxweb/vuenut" ><i class="flaticon-github-logo"></i></a>
+      </li>
     </ul>
 </header>
 
@@ -62,6 +67,9 @@
 
         <div class="con-menu-docs ">
   <!-- Home -->
+  <div onclick="clickmenu()" class="icon-res">
+    <i class="material-icons">menu</i>
+  </div>
   <ul>
     <li class="nav-link docs">
       <a href="/vuenut.org/docs/introduction.html" >What is Vuenut.js?</a>
