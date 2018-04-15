@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Vuenut</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Getting StartedVuenut is a library that you can use in a complex project without any problem to install the dependency you just have to execute the commands. Install en Proyecto NPM / YARN12345# npmnp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vuenut">
+<meta property="og:url" content="https://lusaxweb.github.io/vuenut.org/docs/gettingStarted.html">
+<meta property="og:site_name" content="Vuenut">
+<meta property="og:description" content="Getting StartedVuenut is a library that you can use in a complex project without any problem to install the dependency you just have to execute the commands. Install en Proyecto NPM / YARN12345# npmnp">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-14T02:55:34.288Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vuenut">
+<meta name="twitter:description" content="Getting StartedVuenut is a library that you can use in a complex project without any problem to install the dependency you just have to execute the commands. Install en Proyecto NPM / YARN12345# npmnp">
+  
+  
+    <!-- <link rel="icon" href="/source/css/images/vuenut-favicon.png"> -->
+    <link rel="icon" src="/vuenut.org/css/images/vuenut-favicon.png" type="image/png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/vuenut.org/css/style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuenut/dist/vuenut.umd.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vuenut/dist/vuenut.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap" >
+      <!-- class="" -->
+      <header class="con-menu">
+  <div class="con-img-menu">
+    <a href="/vuenut.org/">
+      <img class="vuenut-logo-menu" src="/vuenut.org/css/images/vuenut_opt.png">
+    </a>
+
+  </div>
+    <ul>
+      <li>
+        false
+        false
+      </li>
+      <li>
+        <a href="/vuenut.org/" class="nav-link Home">Home</a>
+      </li>
+      <li>
+        <a href="/vuenut.org/docs/introduction.html" class="nav-link docs current">Docs</a>
+
+      </li>
+    </ul>
+</header>
+
+      <div class="outer ">
+
+        <div class="con-menu-docs ">
+  <!-- Home -->
+  <ul>
+    <li class="nav-link docs">
+      <a href="/vuenut.org/docs/introduction.html" >What is Vuenut.js?</a>
+    </li>
+    <li class="nav-link docs current">
+      <a href="/vuenut.org/docs/gettingStarted.html">Getting Started</a>
+    </li>
+    <li class="nav-link docs">
+      <a href="/vuenut.org/docs/cdn.html">Quick-start CDN</a>
+    </li>
+    <li class="nav-link docs">
+      <a href="/vuenut.org/docs/becomePatron.html">Become a Patron</a>
+    </li>
+    <li class="nav-link docs">
+      <a href="/vuenut.org/docs/SpecialFeatures.html">Special features</a>
+    </li>
+  </ul>
+</div>
+
+        <section id="main" class="con-docs"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><p>Vuenut is a library that you can use in a complex project without any problem to install the dependency you just have to execute the commands.</p>
+<h2 id="Install-en-Proyecto-NPM-YARN"><a href="#Install-en-Proyecto-NPM-YARN" class="headerlink" title="Install en Proyecto NPM / YARN"></a>Install en Proyecto NPM / YARN</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm</span></span><br><span class="line">npm install vuenut</span><br><span class="line"></span><br><span class="line"><span class="comment"># yarn</span></span><br><span class="line">yarn add vuenut</span><br></pre></td></tr></table></figure>
+<h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><p>To use vuenut you must import the plugin and use the functionality of vuejs to add plugins <code>Vue.use ()</code> only with implementing these lines of code and you only need to add to vuenut where best fits your needs</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> Vuenut <span class="keyword">from</span> <span class="string">'vuenut'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'vuenut/dist/vuenut.css'</span></span><br><span class="line">Vue.use(Vuenut)</span><br></pre></td></tr></table></figure>
+<h2 id="Implement-vuenut"><a href="#Implement-vuenut" class="headerlink" title="Implement vuenut"></a>Implement vuenut</h2><p> To implement vuenut we first add the vuenut tag with the parameter: store which is where we put the application store, if you want to learn more about <strong> vuex </strong> you can check the <a href="https://vuex.vuejs.org/en/" target="_blank" rel="noopener">Official documentation</a></p>
+<p class="tip">important when adding the store put <code>$store.state</code> with the included <strong>state</strong> so that vuenut can work without problem.</p>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">lang</span>=<span class="string">"html"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"con-my-app"</span>&gt;</span>    </span><br><span class="line">    <span class="tag">&lt;<span class="name">vuenut</span> <span class="attr">:store</span>=<span class="string">"$store.state"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">lang</span>=<span class="string">"css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lusaxweb.github.io/vuenut.org/docs/gettingStarted.html" data-id="cjg0yuzci0007uoq5dum8wgv3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        <!-- 
+          <aside id="sidebar">
+  
+    
+
+  
+</aside>
+         -->
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Copyright © 2018 Lusaxweb
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/vuenut.org/fancybox/jquery.fancybox.css">
+  <script src="/vuenut.org/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/vuenut.org/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
