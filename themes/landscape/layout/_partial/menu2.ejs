@@ -6,6 +6,10 @@
 
   </div>
     <ul>
+      <!-- <li>
+        <%- is_current("/docs/introduction.html") %>
+        <%- is_home() %>
+      </li> -->
       <li>
         <a href="<%- url_for("/") %>" class="nav-link Home<%- is_home() ? ' current' : '' %>">Home</a>
       </li>

@@ -1,19 +1,19 @@
-<div class="con-menu-docs ">
+<div class="con-menu-docs <%- is_home() ? ' menu-oculto' : '' %>">
   <!-- Home<%- is_home() ? ' menu-oculto' : '' %> -->
   <ul>
-    <li class="nav-link docs<%- page.path.match(/introduction/) ? ' current' : '' %>">
+    <li class="nav-link docs<%- page.path.match(/introduction/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/introduction.html") %>" >What is Vuenut.js?</a>
     </li>
-    <li class="nav-link docs<%- page.path.match(/gettingStarted/) ? ' current' : '' %>">
+    <li class="nav-link docs<%- page.path.match(/gettingStarted/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/gettingStarted.html") %>">Getting Started</a>
     </li>
-    <li class="nav-link docs<%- page.path.match(/cdn/) ? ' current' : '' %>">
+    <li class="nav-link docs<%- page.path.match(/cdn/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/cdn.html") %>">Quick-start CDN</a>
     </li>
-    <li class="nav-link docs<%- page.path.match(/becomePatron/) ? ' current' : '' %>">
+    <li class="nav-link docs<%- page.path.match(/becomePatron/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/becomePatron.html") %>">Become a Patron</a>
     </li>
-    <li class="nav-link docs<%- page.path.match(/SpecialFeatures/) ? ' current' : '' %>">
+    <li class="nav-link docs<%- page.path.match(/SpecialFeatures/) ? ' current2' : '' %>">
       <a href="<%- url_for("/docs/SpecialFeatures.html") %>">Special features</a>
     </li>
   </ul>

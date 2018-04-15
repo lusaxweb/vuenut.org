@@ -1,13 +1,13 @@
 
-new Vue({
-  data(){
-    return {
-      store:{
-        vuenut:'hello world'
-      }
-    }
-  }
-}).$mount('#inicio')
+// new Vue({
+//   data(){
+//     return {
+//       store:{
+//         vuenut:'hello world'
+//       }
+//     }
+//   }
+// }).$mount('#inicio')
 
 (function($){
 

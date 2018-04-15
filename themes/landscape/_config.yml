@@ -3,7 +3,7 @@
 # menu:
 #   Home: /
 #   docs: /archives
-root_domain: vuejs.org
+root_domain: https://lusaxweb.github.io/vuenut.org
 
 # Content
 excerpt_link: Read More
@@ -31,7 +31,7 @@ show_count: false
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: source/css/images/vuenut-favicon.png
+favicon: css/images/vuenut-favicon.png
 twitter:
 google_plus:
 fb_admins:

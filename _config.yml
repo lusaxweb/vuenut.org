@@ -45,6 +45,14 @@ highlight:
   auto_detect: false
   tab_replace:
 
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 0
+category: 0
+tag: 0
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
