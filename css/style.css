@@ -317,12 +317,7 @@ a {
   height: 40px;
   background: #435466;
   color: #fff;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-flex-align: center;
@@ -341,6 +336,14 @@ a {
   top: 0px;
 }
 @media only screen and (max-width: 800px) {
+  .icon-res {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+    display: flex !important;
+  }
   #wrap {
     width: 100% !important;
     margin-left: 0px !important;
