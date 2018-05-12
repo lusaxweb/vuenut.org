@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Vuenut">
 <meta property="og:description" content="Special featuresThere are cases where we need some special things vuenut knows that and that’s why we implemented some of them. Secure VuenutYou need vuenut to have security so that not everyone can s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-23T04:57:29.075Z">
+<meta property="og:updated_time" content="2018-05-12T05:52:56.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vuenut">
 <meta name="twitter:description" content="Special featuresThere are cases where we need some special things vuenut knows that and that’s why we implemented some of them. Secure VuenutYou need vuenut to have security so that not everyone can s">
@@ -106,6 +106,11 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">vuenut</span> <span class="attr">hidden</span> <span class="attr">:store</span>=<span class="string">"$store.state"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="Print-Screen"><a href="#Print-Screen" class="headerlink" title="Print Screen"></a>Print Screen</h2><p>You can take print screen at any time by pressing the key combination <code>Alt p</code> (print screen), this functionality is designed for the test and obtaining errors to report and save them</p>
 <h2 id="New-Great-Functions"><a href="#New-Great-Functions" class="headerlink" title="New Great Functions"></a>New Great Functions</h2><p><strong>Vuenut</strong> is a library in progress that will continue to grow and implement new features, some are already in process in case you have a great idea or solution we would be delighted that you communicate it to our <a href="https://github.com/lusaxweb/vuenut/issues" target="_blank" rel="noopener">Issues</a> to improve or implement it together</p>
+<h2 id="Ignore-some-data"><a href="#Ignore-some-data" class="headerlink" title="Ignore some data"></a>Ignore some data</h2><p>You can ignore some data in vuenut in case you do not want to visualize them or handle them because they are not necessary for manipulation</p>
+<p>The property is <code>ignore</code> and as a value we spent an <strong>Array</strong>. </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">vuenut</span> <span class="attr">ignore</span>=<span class="string">[</span>'<span class="attr">example</span>'] <span class="attr">:store</span>=<span class="string">"$store.state"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Each of the values ​​within the array will be ignored by <strong>vuenut</strong>, in case you need to ignore an internal value inside the tree you just have to add a <code>.</code> between the values ​​as if you were accessing an object in <strong>javascript</strong>.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">vuenut</span> <span class="attr">ignore</span>=<span class="string">[</span>'<span class="attr">example.child</span>'] <span class="attr">:store</span>=<span class="string">"$store.state"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
